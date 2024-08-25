@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Logo Generator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Logo Generator</h1>
+        <form id="logoForm">
+            <label for="prompt">Enter Logo Name:</label>
+            <input type="text" id="prompt" name="prompt" required>
+            
+            <label for="fontSize">Font Size:</label>
+            <input type="number" id="fontSize" name="fontSize" value="40" min="10" max="100" required>
+            
+            <label for="backgroundColor">Background Color:</label>
+            <input type="color" id="backgroundColor" name="backgroundColor" value="#FFFFFF" required>
+            
+            <label for="textColor">Text Color:</label>
+            <input type="color" id="textColor" name="textColor" value="#000000" required>
+            
+            <label for="shapeType">Icon Shape:</label>
+            <select id="shapeType" name="shapeType" required>
+                <option value="0">Circle</option>
+                <option value="1">Rectangle</option>
+                <option value="2">Triangle</option>
+            </select>
+            
+            <button type="submit">Generate Logo</button>
+        </form>
+        <div id="results" class="results">
+            <!-- Generated logo will be displayed here -->
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
